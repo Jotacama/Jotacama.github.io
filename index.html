@@ -3,154 +3,251 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>NTT DATA — Transformación digital & Servicios TI</title>
-<meta name="description" content="Soluciones de consultoría, cloud, datos y transformación digital de NTT DATA. Acelera la innovación y optimiza tus operaciones." />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/index.css">
+<style>
+  body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    background-color: #fff;
+    color: #111827;
+  }
+
+  /* CABECERA HERO */
+  header {
+    position: relative;
+    text-align: center;
+    color: white;
+    height: 100vh; /* Ocupa toda la pantalla */
+    overflow: hidden;
+  }
+
+  header img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.45);
+  }
+
+  header .header-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 56px;
+    font-weight: 800;
+    text-shadow: 2px 2px 12px rgba(0,0,0,0.7);
+  }
+
+  header .subtext {
+    position: absolute;
+    top: 62%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    font-weight: 400;
+    color: #f3f4f6;
+  }
+
+  .hero-btn {
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #0070f3;
+    color: white;
+    padding: 14px 32px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 18px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  }
+
+  .hero-btn:hover {
+    background-color: #0058c9;
+  }
+
+  /* NAV */
+  nav {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    padding: 16px;
+    background-color: #f3f4f6;
+  }
+
+  nav a {
+    text-decoration: none;
+    color: #111827;
+    font-weight: 600;
+  }
+
+  nav a:hover {
+    color: #0070f3;
+  }
+
+  section {
+    padding: 48px 16px;
+    text-align: center;
+  }
+
+  /* SERVICIOS */
+  #servicios {
+    background-color: #f9fafb;
+  }
+
+  .service-card {
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    padding: 16px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    text-align: center;
+    flex: 1 1 250px;
+  }
+
+  /* CASOS */
+  #casos {
+    background-color: #ffffff;
+  }
+
+  .caso-card {
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    padding: 16px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    flex: 1 1 300px;
+  }
+
+  /* FOOTER */
+  footer {
+    padding: 40px 16px;
+    background-color: #111827;
+    color: white;
+  }
+
+  .reseñas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: center;
+    margin-top: 24px;
+  }
+
+  .review-card {
+    flex: 1 1 300px;
+    border: 1px solid #374151;
+    border-radius: 12px;
+    padding: 16px;
+    background-color: #1f2937;
+    color: #f3f4f6;
+  }
+
+  .btn {
+    display: inline-block;
+    background-color: #0070f3;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    margin-top: 16px;
+  }
+
+  .btn:hover {
+    background-color: #0058c9;
+  }
+</style>
 </head>
+
 <body>
-<div class="container">
 <header>
-<a class="logo" href="#">
-<svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect width="32" height="32" rx="6"/></svg>
-<div>
-<div style="font-weight:800">NTT DATA</div>
-<div style="font-size:12px;color:#6b7280;margin-top:2px">Transformación digital & TI</div>
-</div>
-</a>
-<nav aria-label="Navegación principal">
-<a href="#servicios">Servicios</a>
-<a href="#casos">Casos</a>
-<a href="#contacto">Contacto</a>
-</nav>
-<button id="theme-toggle" style="margin-left:12px;padding:6px 12px;border-radius:6px;border:1px solid #6b7280;cursor:pointer">Modo oscuro</button>
+  <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1600&q=80" alt="Cabecera NTT DATA">
+  <div class="header-text">NTT DATA — Transformación Digital & TI</div>
+  <div class="subtext">Innovación, tecnología y resultados medibles</div>
+  <a href="#servicios" class="hero-btn">Descubre más</a>
 </header>
 
+<nav aria-label="Navegación principal">
+  <a href="#servicios">Servicios</a>
+  <a href="#casos">Casos</a>
+  <a href="contacto.html">Contáctanos</a>
+</nav>
 
 <main>
-  <section class="hero" aria-labelledby="hero-title">
-    <div>
-      <h1 id="hero-title">Acelera tu transformación digital con NTT DATA</h1>
-      <p>Combinamos consultoría estratégica, ingeniería de datos, cloud y experiencia de usuario para crear soluciones escalables que impulsan resultados medibles.</p>
-      <div class="ctas">
-        <button class="btn" onclick="document.getElementById('contacto').scrollIntoView({behavior:'smooth'})">Solicitar una demo</button>
-        <button class="btn secondary" onclick="window.location='#casos'">Ver casos de éxito</button>
-        <a href="https://www.nttdata.com/es/es/" target="_blank" class="btn" 
-     style="background-color:#0070f3;color:#fff;font-weight:600;text-decoration:none;">
-    Visitar NTT DATA
-  </a>
+  <!-- SERVICIOS -->
+  <section id="servicios">
+    <h2 style="font-size:28px;font-weight:700;margin-bottom:24px;">Nuestros servicios</h2>
+    <div style="display:flex;flex-wrap:wrap;gap:16px;justify-content:center;">
+      <div class="service-card">
+        <h3>Consultoría & Transformación</h3>
+        <p>Transforma tu negocio con asesoramiento estratégico y digital.</p>
       </div>
-<div class="ctas" style="display:flex;justify-content:center;gap:12px;margin-top:32px;">
-
-  </a>
-</div>
-      <div style="margin-top:24px">
-        
+      <div class="service-card">
+        <h3>Cloud & Migraciones</h3>
+        <p>Optimiza tus operaciones con soluciones de nube híbrida.</p>
       </div>
-      
-      <div style="display:flex;gap:10px;margin-top:20px">
-        <div class="feature-card" style="flex:1">
-          <strong>+20 años</strong>
-          <div style="color:#6b7280;font-size:14px">estratégia y ejecución</div>
-        </div>
-        <div class="feature-card" style="flex:1">
-          <strong>Operaciones 24/7</strong>
-          <div style="color:#6b7280;font-size:14px">soporte global</div>
-        </div>
+      <div class="service-card">
+        <h3>Plataformas de Datos & AI</h3>
+        <p>Impulsa tu organización con analítica avanzada e inteligencia artificial.</p>
       </div>
-    </div>
-<!-- Sección de Servicios -->
-<section id="servicios" aria-labelledby="servicios-title" style="margin-top:48px;">
-  <h2 id="servicios-title" style="font-size:24px;font-weight:700;margin-bottom:24px;text-align:center;">
-    Nuestros servicios
-  </h2>
-  <div style="display:flex;flex-wrap:wrap;gap:16px;justify-content:center;">
-    
-    <div class="service-card" style="flex:1 1 250px;border:1px solid #e5e7eb;border-radius:12px;padding:16px;box-shadow:0 2px 6px rgba(0,0,0,0.05);text-align:center;">
-      <h3 style="font-size:18px;font-weight:600;margin-bottom:8px;">Consultoría & Transformación</h3>
-      <p style="color:#6b7280;font-size:14px;">Análisis estratégico y acompañamiento para transformar tu negocio y procesos digitales.</p>
-    </div>
-
-    <div class="service-card" style="flex:1 1 250px;border:1px solid #e5e7eb;border-radius:12px;padding:16px;box-shadow:0 2px 6px rgba(0,0,0,0.05);text-align:center;">
-      <h3 style="font-size:18px;font-weight:600;margin-bottom:8px;">Cloud & Migraciones</h3>
-      <p style="color:#6b7280;font-size:14px;">Soluciones de nube híbrida y migraciones para optimizar infraestructura y operaciones.</p>
-    </div>
-
-    <div class="service-card" style="flex:1 1 250px;border:1px solid #e5e7eb;border-radius:12px;padding:16px;box-shadow:0 2px 6px rgba(0,0,0,0.05);text-align:center;">
-      <h3 style="font-size:18px;font-weight:600;margin-bottom:8px;">Plataformas de datos & AI</h3>
-      <p style="color:#6b7280;font-size:14px;">Implementación de soluciones de datos, inteligencia artificial y analítica avanzada.</p>
-    </div>
-
-    <div class="service-card" style="flex:1 1 250px;border:1px solid #e5e7eb;border-radius:12px;padding:16px;box-shadow:0 2px 6px rgba(0,0,0,0.05);text-align:center;">
-      <h3 style="font-size:18px;font-weight:600;margin-bottom:8px;">Modernización de Aplicaciones</h3>
-      <p style="color:#6b7280;font-size:14px;">Actualización y optimización de aplicaciones para mejorar rendimiento y escalabilidad.</p>
-    </div>
-
-  </div>
-</section>
-
-
-    <aside>
-      <div class="feature-card" role="article" aria-label="Resumen rápido">
-        <h3>Soluciones principales</h3>
-        <ul style="margin:8px 0 0;padding-left:18px;color:#6b7280">
-          <li>Consultoría de negocio & transformación</li>
-          <li>Cloud híbrida y migraciones</li>
-          <li>Plataformas de datos & AI</li>
-          <li>Modernización de aplicaciones</li>
-        </ul>
+      <div class="service-card">
+        <h3>Modernización de Aplicaciones</h3>
+        <p>Actualiza tus sistemas para mayor rendimiento y escalabilidad.</p>
       </div>
-    </aside>
-  </section>
-
-  <!-- NUEVA SECCIÓN DE RESEÑAS -->
-  <section id="reseñas" aria-labelledby="reseñas-title" style="margin-top:48px;">
-    <h2 id="reseñas-title" style="font-size:24px;font-weight:700;margin-bottom:16px;">Lo que dicen nuestros clientes</h2>
-    <div style="display:flex;flex-wrap:wrap;gap:16px;">
-
-      <div class="review-card" style="flex:1 1 300px;border:1px solid #e5e7eb;border-radius:12px;padding:16px;box-shadow:0 2px 6px rgba(0,0,0,0.05);">
-        <p style="font-style:italic;color:#374151;">“NTT DATA transformó completamente nuestra infraestructura digital y aumentó nuestra eficiencia operativa.”</p>
-        <div style="margin-top:12px;font-weight:600;color:#111827;">María López</div>
-        <div style="font-size:14px;color:#6b7280;">Directora de Tecnología, Empresa XYZ</div>
-      </div>
-
-      <div class="review-card" style="flex:1 1 300px;border:1px solid #e5e7eb;border-radius:12px;padding:16px;box-shadow:0 2px 6px rgba(0,0,0,0.05);">
-        <p style="font-style:italic;color:#374151;">“Su enfoque en consultoría estratégica y cloud nos permitió reducir costos y acelerar proyectos clave.”</p>
-        <div style="margin-top:12px;font-weight:600;color:#111827;">Carlos Méndez</div>
-        <div style="font-size:14px;color:#6b7280;">Gerente de Innovación, Compañía ABC</div>
-      </div>
-
-      <div class="review-card" style="flex:1 1 300px;border:1px solid #e5e7eb;border-radius:12px;padding:16px;box-shadow:0 2px 6px rgba(0,0,0,0.05);">
-        <p style="font-style:italic;color:#374151;">“La colaboración con NTT DATA nos permitió implementar soluciones de AI que antes parecían inalcanzables.”</p>
-        <div style="margin-top:12px;font-weight:600;color:#111827;">Lucía Fernández</div>
-        <div style="font-size:14px;color:#6b7280;">CTO, Startup 123</div>
-      </div>
-
     </div>
   </section>
 
-  <!-- ... resto del contenido permanece igual ... -->
+  <!-- CASOS -->
+  <section id="casos">
+    <h2 style="font-size:28px;font-weight:700;margin-bottom:24px;">Casos de éxito</h2>
+    <div style="display:flex;flex-wrap:wrap;gap:16px;justify-content:center;">
+      <div class="caso-card">
+        <h3>Transformación bancaria</h3>
+        <p>NTT DATA ayudó a un banco líder a migrar sus sistemas a la nube y mejorar su tiempo de respuesta un 40%.</p>
+      </div>
+      <div class="caso-card">
+        <h3>Automatización industrial</h3>
+        <p>Diseñamos soluciones de AI para una empresa de manufactura que redujeron los errores operativos un 25%.</p>
+      </div>
+      <div class="caso-card">
+        <h3>Modernización gubernamental</h3>
+        <p>Digitalizamos procesos públicos, mejorando la eficiencia y la accesibilidad ciudadana.</p>
+      </div>
+    </div>
+  </section>
 </main>
 
-
+<!-- FOOTER CON RESEÑAS -->
 <footer>
-<div style="display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap">
-<div>© <strong>NTT DATA</strong> — Todos los derechos reservados.</div>
-<div style="color:#6b7280">Política de privacidad · Términos · Mapa del sitio</div>
-</div>
+  <h2 style="text-align:center;font-size:22px;margin-bottom:16px;">Lo que dicen nuestros clientes</h2>
+  <div class="reseñas">
+    <div class="review-card">
+      <p>“NTT DATA transformó completamente nuestra infraestructura digital.”</p>
+      <strong>María López</strong><br>
+      <small>Directora de Tecnología, Empresa XYZ</small>
+    </div>
+    <div class="review-card">
+      <p>“Su enfoque en consultoría y cloud nos permitió reducir costos.”</p>
+      <strong>Carlos Méndez</strong><br>
+      <small>Gerente de Innovación, Compañía ABC</small>
+    </div>
+    <div class="review-card">
+      <p>“Implementamos soluciones de AI que antes parecían inalcanzables.”</p>
+      <strong>Lucía Fernández</strong><br>
+      <small>CTO, Startup 123</small>
+    </div>
+  </div>
+
+  <div style="text-align:center;margin-top:24px;">
+    <a href="contacto.html" class="btn">Contáctanos</a>
+  </div>
+
+  <p style="text-align:center;margin-top:24px;font-size:14px;color:#9ca3af;">
+    © 2025 <strong>NTT DATA</strong> — Todos los derechos reservados.
+  </p>
 </footer>
-</div>
-
-
-<script>
-document.addEventListener('DOMContentLoaded', () => {
-const toggleBtn = document.getElementById('theme-toggle');
-toggleBtn.addEventListener('click', () => {
-document.body.classList.toggle('dark-mode');
-toggleBtn.textContent = document.body.classList.contains('dark-mode') ? 'Modo claro' : 'Modo oscuro';
-});
-});
-
-</script>
 </body>
 </html>
